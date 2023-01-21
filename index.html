@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/ec50e522c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Slabshop</title>
+  </head>
+  <body>
+    <div class="done-loader fade-animation">
+      <nav id="navbar-component"></nav>
+      <div class="hero-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/image-hero.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bils-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="images/utility.png" alt="" class="image-flashsale" style="width: 100%" />
+            </div>
+            <div class="col-lg-8 border" style="border-radius: 8px">
+              <div class="group p-3">
+                <div class="display-between-center my-2">
+                  <h5 class="fw-bold m-0">Payment Transaction</h5>
+                  <button class="btn btn-purple btn-more-payment">View Payment</button>
+                </div>
+                <div class="display-align-center my-2 gap-3 list-bill hide"></div>
+              </div>
+              <div class="group border-top p-3">
+                <form class="form-payment">
+                  <div class="row">
+                    <div class="col-lg-6 my-2">
+                      <label for="code" class="my-2">Code Transaction</label><br />
+                      <input type="text" id="code" class="my-2" placeholder="Ex: 276NHVF387XN3487" />
+                    </div>
+                    <div class="col-lg-6 my-2">
+                      <label for="" class="my-2">Payment Amount</label><br />
+                      <input type="text" id="payment" class="my-2" placeholder="Ex : Rp. 100.000,00,-" />
+                    </div>
+                  </div>
+                  <div class="display-between-center my-2">
+                    <button type="submit" class="btn btn-purple">Purchase</button>
+                    <a href="http://" class="paragraph-1" style="color: #31353b; text-decoration: none">Help !</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="categories-section">
+        <div class="container-fluid">
+          <h3 class="fw-bold m-0">Choice Categories</h3>
+          <div class="row categories"></div>
+        </div>
+      </div>
+      <div class="flash-sale-section">
+        <div class="container-fluid">
+          <div class="group title-section display-between-center">
+            <h3 class="fw-bold m-0">November Super Flash Sale ⚡</h3>
+            <div class="group">
+              <p class="paragparh-1 m-0">
+                Ends in : <span class="card-date days"></span> : <span class="card-date hours"></span> : <span class="card-date minutes"></span> :
+                <span class="card-date seconds"></span>
+              </p>
+            </div>
+          </div>
+          <div class="group card-section">
+            <div class="card-price">
+              <div class="card-image">
+                <img src="" alt="" class="" />
+              </div>
+              <div class="group card-text">
+                <div class="card-text-head">
+                  <p class="p-mini my-2" style="color: #828282">Gadget Electronic</p>
+                  <p class="paragraph-2 my-2">iphone XS</p>
+                </div>
+                <div class="group card-text-body">
+                  <p class="p-mini text-decoration-line-through">Rp. 7,999,999,-</p>
+                  <div class="group display-between-center">
+                    <p class="paragraph-2 my-2">Rp. 6,999,999,-</p>
+                    <div class="group discount-group">
+                      <p class="discount-text">- 10%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testjs"></div>
+    </div>
+
+    <!-- <div class="display-center fade-animation" id="loading">
+      <section class="loader">
+        <div style="--i: 0" class="slider"></div>
+        <div style="--i: 1" class="slider"></div>
+        <div style="--i: 2" class="slider"></div>
+        <div style="--i: 3" class="slider"></div>
+        <div style="--i: 4" class="slider"></div>
+      </section>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      var myCarousel = document.querySelector("#myCarousel");
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 4000,
+        wrap: true,
+      });
+    </script>
+    <script src="js/payment.js"></script>
+    <script src="js/navComponent.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/stock-barang.js"></script>
+    <!-- <script>
+      const doneLoad = document.querySelector(".done-loader");
+      const loading = document.querySelector("#loading");
+
+      doneLoad.style.display = "none";
+      setTimeout(function () {
+        $(".loader").hide();
+        doneLoad.style.display = "block";
+        loading.style.display = "none";
+      }, 3000);
+    </script> -->
+  </body>
+</html>

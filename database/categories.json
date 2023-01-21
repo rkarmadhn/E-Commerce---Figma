@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "logo": "man-fashion.png",
+    "title": "Man Fashion"
+  },
+  {
+    "id": 2,
+    "logo": "gadget-electronic.png",
+    "title": "Gadget Electronic"
+  },
+  {
+    "id": 3,
+    "logo": "voucher-game.png",
+    "title": "Voucher Game"
+  },
+  {
+    "id": 4,
+    "logo": "property.png",
+    "title": "Property"
+  },
+  {
+    "id": 5,
+    "logo": "kids-fashion.png",
+    "title": "Kids Fashion"
+  },
+  {
+    "id": 6,
+    "logo": "computer-&-laptop.png",
+    "title": "Computer & Laptop"
+  },
+  {
+    "id": 7,
+    "logo": "woman-fashion.png",
+    "title": "Woman Fashion"
+  },
+  {
+    "id": 8,
+    "logo": "sports.png",
+    "title": "Sports"
+  },
+  {
+    "id": 9,
+    "logo": "gaming.png",
+    "title": "Gaming"
+  },
+  {
+    "id": 10,
+    "logo": "film-&-music.png",
+    "title": "Film & Music"
+  },
+  {
+    "id": 11,
+    "logo": "view-all.png",
+    "title": "View All"
+  }
+]

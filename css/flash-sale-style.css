@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+  .flash-sale-section {
+    padding: 24px 0;
+  }
+  .card-date {
+    background-color: #52057b;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+  }
+}

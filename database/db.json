@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nama": "Balance",
+    "url": "balance"
+  },
+  {
+    "id": 2,
+    "nama": "Top Up",
+    "url": "top-up"
+  },
+  {
+    "id": 3,
+    "nama": "Internet",
+    "url": "internet"
+  },
+  {
+    "id": 4,
+    "nama": "Electricity Tokens",
+    "url": "electricity-tokens"
+  },
+  {
+    "id": 5,
+    "nama": "Ticket",
+    "url": "ticket"
+  },
+  {
+    "id": 6,
+    "nama": "Data Package",
+    "url": "data-package"
+  },
+  {
+    "id": 7,
+    "nama": "Pulsa",
+    "url": "pulsa"
+  },
+  {
+    "id": 8,
+    "nama": "Voucher",
+    "url": "voucher"
+  }
+]

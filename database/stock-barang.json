@@ -1,0 +1,74 @@
+{
+  "stock": {
+    "pilihan": [
+      {
+        "id": 1,
+        "jenis": "Computer & Laptop",
+        "computerLaptop": [
+          {
+            "id": 1,
+            "type": "Mac Book"
+          },
+          {
+            "id": 2,
+            "type": "Laptop"
+          },
+          {
+            "id": 3,
+            "type": "Notebook"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "jenis": "Film & Music",
+        "filmMusic": [
+          {
+            "id": 1,
+            "type": "Avatar"
+          },
+          {
+            "id": 2,
+            "type": "Doraemon"
+          },
+          {
+            "id": 3,
+            "type": "Sinchan"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "jenis": "Gadget Electronic",
+        "gadgetElectronic": [
+          {
+            "id": 1,
+            "type": "Apple",
+            "apple": [
+              {
+                "id": 1,
+                "title": "Iphone 8"
+              },
+              {
+                "id": 2,
+                "title": "Iphone XS"
+              },
+              {
+                "id": 3,
+                "title": "Iphone XR"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "type": "Asus"
+          },
+          {
+            "id": 3,
+            "type": "Oppo"
+          }
+        ]
+      }
+    ]
+  }
+}

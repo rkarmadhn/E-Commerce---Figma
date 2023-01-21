@@ -1,0 +1,21 @@
+@media (min-width : 992px) {
+    .bils-section{
+        padding: 24px 0;
+    }
+    .image-flashsale{
+        height: 322px;
+    }
+    .card-payment{
+        height: 322px;
+    }
+    .form-payment input{
+        padding: 16px;
+        background-color: #fcfcfc;
+        width: 100%;
+        border: 1px solid #828282;
+        border-radius: 6px;
+    }
+    .form-payment input:focus{
+        border: 1px solid #828282;
+    }
+}

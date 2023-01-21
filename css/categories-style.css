@@ -1,0 +1,12 @@
+@media (min-width : 992px) {
+    .categories-section{
+        padding: 24px 0;
+    }
+    .categories {
+        margin: 20px 0;
+        justify-content: space-around;
+    }
+    .title-category{
+        min-height: 50px;
+    }
+}
