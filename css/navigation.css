@@ -1,7 +1,4 @@
 @media (max-width: 575.98px) {
-  body {
-    background-color: #52057b;
-  }
   i {
     font-size: 22px;
   }
@@ -40,7 +37,7 @@
   .form-search i {
     margin: 0 5px;
   }
-  .input-search{
+  .input-search {
     position: absolute;
     top: 70px;
     right: 6%;
@@ -50,11 +47,18 @@
   }
   .btn-menu,
   .btn-hide {
-    width: 20px;
+    width: 25px;
+    height: 22px;
     color: #212121;
     border: none;
     background-color: transparent;
     margin: 0 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
   }
   .btn-hide {
     display: none;
@@ -62,14 +66,14 @@
   .nav-items {
     position: absolute;
     top: 60px;
-    left: -100%;
+    left: -110%;
     width: 100vw;
     height: 100vh;
     background-color: #fff;
     display: block;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     transition: 0.5s;
   }
   .dropdown-title {
@@ -96,6 +100,17 @@
     display: flex;
     align-items: center;
     padding: 15px 0;
+  }
+  .bottom-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12px;
+}
+  .pop-search{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -199,5 +214,9 @@
     align-items: center;
     background-color: #fff;
   }
+  .pop-search{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 }
-
