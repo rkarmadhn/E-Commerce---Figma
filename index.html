@@ -14,60 +14,56 @@
   <body>
     <div class="done-loader fade-animation">
       <nav id="navbar-component"></nav>
-      <!-- <div class="hero-section">
+      <!-- Hero Section -->
+      <div class="hero-section">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/image-hero.png" alt="" />
-                  </div>
-                </div>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/image-hero.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </div> -->
-      <!-- <div class="bils-section">
+      </div>
+      <!-- Payment Section -->
+      <div class="bils-section">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-4">
               <img src="images/utility.png" alt="" class="image-flashsale" style="width: 100%" />
             </div>
-            <div class="col-lg-8 border" style="border-radius: 8px">
-              <div class="group p-3">
-                <div class="display-between-center my-2">
-                  <h5 class="fw-bold m-0">Payment Transaction</h5>
-                  <button class="btn btn-purple btn-more-payment">View Payment</button>
+            <div class="col-lg-8 col-sm-12 border" style="border-radius: 8px">
+              <div class="group">
+                <h5 class="fw-bold title-payment">Payment Transaction</h5>
+                <div class="list-bill"></div>
+                <div class="group border-top p-3">
+                  <form class="form-payment">
+                    <div class="row">
+                      <div class="col-lg-6 my-2">
+                        <label for="code" class="my-2">Code Transaction</label><br />
+                        <input type="text" id="code" placeholder="Ex: 276NHVF387XN3487" />
+                      </div>
+                      <div class="col-lg-6 my-2">
+                        <label for="" class="my-2">Payment Amount</label><br />
+                        <input type="text" id="payment" placeholder="Ex : Rp. 100.000,00,-" />
+                      </div>
+                    </div>
+                    <div class="display-between-center my-2">
+                      <button type="submit" class="btn btn-purple">Purchase</button>
+                      <a href="http://" class="paragraph-1" style="color: #31353b; text-decoration: none">Help !</a>
+                    </div>
+                  </form>
                 </div>
-                <div class="display-align-center my-2 gap-3 list-bill hide"></div>
-              </div>
-              <div class="group border-top p-3">
-                <form class="form-payment">
-                  <div class="row">
-                    <div class="col-lg-6 my-2">
-                      <label for="code" class="my-2">Code Transaction</label><br />
-                      <input type="text" id="code" class="my-2" placeholder="Ex: 276NHVF387XN3487" />
-                    </div>
-                    <div class="col-lg-6 my-2">
-                      <label for="" class="my-2">Payment Amount</label><br />
-                      <input type="text" id="payment" class="my-2" placeholder="Ex : Rp. 100.000,00,-" />
-                    </div>
-                  </div>
-                  <div class="display-between-center my-2">
-                    <button type="submit" class="btn btn-purple">Purchase</button>
-                    <a href="http://" class="paragraph-1" style="color: #31353b; text-decoration: none">Help !</a>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
+      <!-- Categories Section -->
       <!-- <div class="categories-section">
         <div class="container-fluid">
           <h3 class="fw-bold m-0">Choice Categories</h3>

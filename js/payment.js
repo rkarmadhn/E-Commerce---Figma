@@ -1,13 +1,4 @@
 const listBill = document.querySelector(".list-bill");
-const btnPaymentMore = document.querySelector(".btn-more-payment");
-
-btnPaymentMore.onclick = () => {
-  btnPaymentMore.classList.toggle("fade-animation");
-  btnPaymentMore.classList.toggle("hide");
-  listBill.classList.toggle("fade-animation");
-  listBill.classList.toggle("hide");
-};
-
 let listData = [];
 
 const loadListBill = async () => {
