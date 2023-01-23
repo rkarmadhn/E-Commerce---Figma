@@ -1,74 +1,69 @@
-{
-  "stock": {
-    "pilihan": [
+[
+  {
+    "id": 1,
+    "smartphone": [
       {
         "id": 1,
-        "jenis": "Computer & Laptop",
-        "computerLaptop": [
+        "hp": [
           {
             "id": 1,
-            "type": "Mac Book"
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/iphone-8",
+            "title": "Iphone 8",
+            "price": 8000000
           },
           {
             "id": 2,
-            "type": "Laptop"
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/iphone-xs-max",
+            "title": "Iphone XS"
           },
           {
             "id": 3,
-            "type": "Notebook"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "jenis": "Film & Music",
-        "filmMusic": [
-          {
-            "id": 1,
-            "type": "Avatar"
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/Iphone-XR",
+            "title": "Iphone XR"
           },
           {
-            "id": 2,
-            "type": "Doraemon"
+            "id": 4,
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/iphone-11",
+            "title": "Iphone 11",
+            "price": 8000000
           },
           {
-            "id": 3,
-            "type": "Sinchan"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "jenis": "Gadget Electronic",
-        "gadgetElectronic": [
-          {
-            "id": 1,
-            "type": "Apple",
-            "apple": [
-              {
-                "id": 1,
-                "title": "Iphone 8"
-              },
-              {
-                "id": 2,
-                "title": "Iphone XS"
-              },
-              {
-                "id": 3,
-                "title": "Iphone XR"
-              }
-            ]
+            "id": 5,
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/iphone-11-pro-max",
+            "title": "Iphone 11 Pro Max"
           },
           {
-            "id": 2,
-            "type": "Asus"
+            "id": 6,
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/Iphone-12",
+            "title": "Iphone 12"
           },
           {
-            "id": 3,
-            "type": "Oppo"
+            "id": 7,
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/iphone-12-pro-max",
+            "title": "Iphone 12 Pro Max",
+            "price": 8000000
+          },
+          {
+            "id": 8,
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/iphone-13",
+            "title": "Iphone 13"
+          },
+          {
+            "id": 9,
+            "jenis" : "Gadget Electronic",
+            "image": "Gadget Electronic/Apple/Iphone-13-pro-max",
+            "title": "Iphone 13 Pro Max"
           }
         ]
       }
     ]
   }
-}
+]

@@ -89,4 +89,5 @@ const loadSearch = (pay) => {
     .join("");
 
   searchz.innerHTML = outputSearch;
-};
+}; 
+

@@ -11,44 +11,66 @@ body {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+.text-box {
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #52057b;
+  background-color: rgba(82, 5, 123, 0.1);
+}
+
+.paragraph-1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  margin: 0;
+}
+.paragraph-2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  margin: 0;
+}
+.p-mini {
+  font-size: 12px;
+  line-height: 14.52px;
+}
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
 @media (min-width: 992px) {
   .container {
     margin: 0 40px !important;
   }
   .container-fluid {
     padding: 12px 40px;
-  }
-  .paragraph-1 {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.94px;
-    margin: 0;
-  }
-  .paragraph-2 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22.4px;
-    margin: 0;
-  }
-  .p-mini{
-    font-size: 12px;
-    line-height: 14.52px;
-  }
-  .display-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .display-between-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .display-align-center {
-    display: flex;
-    align-items: center;
   }
   .container-navbar {
     display: flex;
@@ -76,7 +98,7 @@ body {
     font-size: 16px;
     text-decoration: none;
     color: #212529;
-    transition: .5s;
+    transition: 0.5s;
   }
   .link:hover {
     color: #828282;
@@ -109,6 +131,36 @@ body {
   }
   .fade-animation {
     animation: fade 2s ease;
+  }
+  .row-new-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-features {
+    width: 230px;
+    padding: 16px 24px;
+    border-radius: 8px;
+  }
+  .vectors {
+    padding: 8px 11px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .card-news {
+    width: 294px;
+    padding: 16px 24px;
+    border-radius: 8px;
+  }
+  .rectangle {
+    width: 8px;
+    height: 50px;
+  }
+  .first-image img,
+  .last-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
   }
 }
 

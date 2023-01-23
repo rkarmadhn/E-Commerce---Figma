@@ -13,15 +13,64 @@
   </head>
   <body>
     <div class="done-loader fade-animation">
-      <nav id="navbar-component"></nav>
-      <div class="hero-section">
+      <nav id="navbar-component">
+        <!-- Navigation -->
+        <div class="container-fluid container-navbar">
+          <div class="navbar-logo">
+            <a href="http://" class="display-center gap-2 m-0 nav-link p-0">
+              <img src="images/logo-brand.png" alt="" class="logo-brand" />
+              <p class="navbar-logo-name">Slabshop</p>
+            </a>
+          </div>
+          <div class="group display-center">
+            <div class="icon-group">
+              <a href="/" class="link"><i class="fa-regular fa-bell"></i></a>
+              <a href="/" class="link"><i class="fa-solid fa-basket-shopping"></i></a>
+            </div>
+            <form class="form-search">
+              <i class="fa-solid fa-magnifying-glass show"></i>
+              <input type="search" class="input-search hide" placeholder="Search in Slabshop" />
+            </form>
+            <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
+            <button class="btn-hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="nav-items">
+            <div class="dropdown-custom category">
+              <div class="group dropdown-title display-between-center">
+                <p class="paragraph-1">Categories</p>
+                <i class="fa-solid fa-arrow-up show"></i>
+                <i class="fa-solid fa-arrow-down hide"></i>
+              </div>
+              <ul class="dropdown-menus hide">
+                <li>Shop</li>
+                <li>Li</li>
+                <li>aw</li>
+                <li>aw</li>
+                <li>awd</li>
+              </ul>
+            </div>
+            <div class="navbar-location gap-3">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="paragraph-1">Indonesia, Bekasi</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid bottom-nav">
+          <div class="group">
+            <p class="paragraph-1 display-center gap-1" style="color: #31353b">Popular Search :<span class="searchs display-center gap-2"></span></p>
+          </div>
+          <div class="group">
+            <p class="paragraph-1" style="color: #31353b">Hide</p>
+          </div>
+        </div>
+      </nav>
+      <!-- <div class="hero-section">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
               <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -78,7 +127,7 @@
       <div class="flash-sale-section">
         <div class="container-fluid">
           <div class="group title-section display-between-center">
-            <h3 class="fw-bold m-0">November Super Flash Sale ⚡</h3>
+            <h3 class="fw-bold m-0">Januari Super Flash Sale ⚡</h3>
             <div class="group">
               <p class="paragparh-1 m-0">
                 Ends in : <span class="card-date days"></span> : <span class="card-date hours"></span> : <span class="card-date minutes"></span> :
@@ -86,22 +135,138 @@
               </p>
             </div>
           </div>
-          <div class="group card-section">
-            <div class="card-price">
-              <div class="card-image">
-                <img src="" alt="" class="" />
-              </div>
-              <div class="group card-text">
-                <div class="card-text-head">
-                  <p class="p-mini my-2" style="color: #828282">Gadget Electronic</p>
-                  <p class="paragraph-2 my-2">iphone XS</p>
+          <div class="position-relative">
+            <div id="cardSection" class="group card-section"></div>
+            <div class="display-between-center btn-group">
+              <button id="prev-button" class="btn-prev"><i class="fa-solid fa-chevron-left"></i> Back</button>
+              <button id="next-button" class="btn-next">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-features-section">
+        <div class="container-fluid">
+          <h4 class="fw-bold m-0">Now Easier to Choose <span class="text-box">New Features</span></h4>
+          <div class="group py-4">
+            <div class="row row-new-features">
+              <div class="card-features" style="background-image: linear-gradient(to right, rgba(191, 90, 224, 1), rgba(168, 17, 218, 1))">
+                <div class="card-head display-align-center gap-3">
+                  <div class="group vectors">
+                    <img src="images/vector/vector-fire.png" alt="" srcset="" />
+                  </div>
+                  <p class="text-white m-0">Popular Product</p>
                 </div>
-                <div class="group card-text-body">
-                  <p class="p-mini text-decoration-line-through">Rp. 7,999,999,-</p>
-                  <div class="group display-between-center">
-                    <p class="paragraph-2 my-2">Rp. 6,999,999,-</p>
-                    <div class="group discount-group">
-                      <p class="discount-text">- 10%</p>
+                <br />
+                <div class="display-between-center text-white">
+                  <p class="m-0">Product</p>
+                  <p class="m-0 jumlah-stock">341 Stock</p>
+                </div>
+              </div>
+              <div class="card-features" style="background-image: linear-gradient(to right, rgba(6, 190, 182, 1), rgba(72, 177, 191, 1))">
+                <div class="card-head display-align-center gap-3">
+                  <div class="group vectors">
+                    <img src="images/vector/vector-search.png" alt="" srcset="" />
+                  </div>
+                  <p class="text-white m-0">Most Wanted</p>
+                </div>
+                <br />
+                <div class="display-between-center text-white">
+                  <p class="m-0">Product</p>
+                  <p class="m-0 jumlah-stock">341 Stock</p>
+                </div>
+              </div>
+              <div class="card-features" style="background-image: linear-gradient(to right, rgba(248, 80, 50, 1), rgba(231, 56, 39, 1))">
+                <div class="card-head display-align-center gap-3">
+                  <div class="group vectors">
+                    <img src="images/vector/vector-shirt.png" alt="" srcset="" />
+                  </div>
+                  <p class="text-white m-0">Top Fashion</p>
+                </div>
+                <br />
+                <div class="display-between-center text-white">
+                  <p class="m-0">Product</p>
+                  <p class="m-0 jumlah-stock">341 Stock</p>
+                </div>
+              </div>
+              <div class="card-features" style="background-image: linear-gradient(to right, rgba(254, 140, 0, 1), rgba(248, 54, 0, 1))">
+                <div class="card-head display-align-center gap-3">
+                  <div class="group vectors">
+                    <img src="images/vector/vector-love.png" alt="" srcset="" />
+                  </div>
+                  <p class="text-white m-0">Best Seller</p>
+                </div>
+                <br />
+                <div class="display-between-center text-white">
+                  <p class="m-0">Product</p>
+                  <p class="m-0 jumlah-stock">341 Stock</p>
+                </div>
+              </div>
+              <div class="card-features" style="background-image: linear-gradient(to right, rgba(248, 87, 166, 1), rgba(255, 88, 88, 1))">
+                <div class="card-head display-align-center gap-3">
+                  <div class="group vectors">
+                    <img src="images/vector/vector-store.png" alt="" srcset="" />
+                  </div>
+                  <p class="text-white m-0">Best Shop</p>
+                </div>
+                <br />
+                <div class="display-between-center text-white">
+                  <p class="m-0">Product</p>
+                  <p class="m-0 jumlah-stock">341 Stock</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="group py-4">
+              <div class="row gap-lg-3 row-news">
+                <div class="card-news border py-3" style="border-radius: 8px;">
+                  <div class="group display-center gap-2">
+                    <span class="rectangle" style="background-color: rgba(0, 82, 212, 1);"></span>
+                    <p class="news-title m-0">The goods are ready stock and ready to be shipped</p>
+                  </div>
+                  <br>
+                  <div class="group">
+                    <div class="row">
+                      <div class="col-lg-6 first-image"><img src="https://www.womanindonesia.co.id/wp-content/uploads/2021/11/Trend-fashion-2022-terins-dari-flora-dan-fauna_womanindonesia.jpg" alt="" srcset=""></div>
+                      <div class="col-lg-6 last-image"><img src="https://akcdn.detik.net.id/community/media/visual/2022/07/31/bonge-kurma-di-fashion-show-di-kuningan-city_169.png?w=700&q=90" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-news border py-3" style="border-radius: 8px;">
+                  <div class="group display-center gap-2">
+                    <span class="rectangle" style="background-color: rgba(0, 82, 212, 1);"></span>
+                    <p class="news-title m-0">New items for those of you who want to pre order</p>
+                  </div>
+                  <br>
+                  <div class="group">
+                    <div class="row">
+                      <div class="col-lg-6 first-image"><img src="https://www.womanindonesia.co.id/wp-content/uploads/2021/11/Trend-fashion-2022-terins-dari-flora-dan-fauna_womanindonesia.jpg" alt="" srcset=""></div>
+                      <div class="col-lg-6 last-image"><img src="https://akcdn.detik.net.id/community/media/visual/2022/07/31/bonge-kurma-di-fashion-show-di-kuningan-city_169.png?w=700&q=90" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-news border py-3" style="border-radius: 8px;">
+                  <div class="group display-center gap-2">
+                    <span class="rectangle" style="background-color: rgba(0, 82, 212, 1);"></span>
+                    <p class="news-title m-0">The goods are ready stock and ready to be shipped</p>
+                  </div>
+                  <br>
+                  <div class="group">
+                    <div class="row">
+                      <div class="col-lg-6 first-image"><img src="https://www.womanindonesia.co.id/wp-content/uploads/2021/11/Trend-fashion-2022-terins-dari-flora-dan-fauna_womanindonesia.jpg" alt="" srcset=""></div>
+                      <div class="col-lg-6 last-image"><img src="https://akcdn.detik.net.id/community/media/visual/2022/07/31/bonge-kurma-di-fashion-show-di-kuningan-city_169.png?w=700&q=90" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-news border py-3" style="border-radius: 8px;">
+                  <div class="group display-center gap-2">
+                    <span class="rectangle" style="background-color: rgba(0, 82, 212, 1);"></span>
+                    <p class="news-title m-0">New items for those of you who want to pre order</p>
+                  </div>
+                  <br>
+                  <div class="group">
+                    <div class="row">
+                      <div class="col-lg-6 first-image"><img src="https://www.womanindonesia.co.id/wp-content/uploads/2021/11/Trend-fashion-2022-terins-dari-flora-dan-fauna_womanindonesia.jpg" alt="" srcset=""></div>
+                      <div class="col-lg-6 last-image"><img src="https://akcdn.detik.net.id/community/media/visual/2022/07/31/bonge-kurma-di-fashion-show-di-kuningan-city_169.png?w=700&q=90" alt=""></div>
                     </div>
                   </div>
                 </div>
@@ -109,8 +274,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="testjs"></div>
+      </div> -->
     </div>
 
     <!-- <div class="display-center fade-animation" id="loading">
@@ -133,10 +297,11 @@
       });
     </script>
     <script src="js/payment.js"></script>
-    <script src="js/navComponent.js"></script>
+    <!-- <script src="js/navComponent.js"></script> -->
     <script src="js/categories.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/stock-barang.js"></script>
+    <script src="js/navbar.js"></script>
     <!-- <script>
       const doneLoad = document.querySelector(".done-loader");
       const loading = document.querySelector("#loading");
@@ -148,5 +313,46 @@
         loading.style.display = "none";
       }, 3000);
     </script> -->
+    <script>
+      var prevButton = document.getElementById("prev-button");
+      var nextButton = document.getElementById("next-button");
+      var overflowContainer = document.getElementById("cardSection");
+      var scrollAmount = 635;
+      var scrollSpeed = 50;
+
+      prevButton.addEventListener("click", function () {
+        scroll(-scrollAmount);
+      });
+
+      nextButton.addEventListener("click", function () {
+        scroll(scrollAmount);
+      });
+
+      function scroll(amount) {
+        var start = overflowContainer.scrollLeft;
+        var end = start + amount;
+        var currentFrame = 0;
+        var totalFrames = scrollSpeed;
+
+        function animate() {
+          currentFrame++;
+          overflowContainer.scrollLeft = easeInOutQuad(currentFrame, start, end, totalFrames);
+          if (currentFrame < totalFrames) {
+            window.requestAnimationFrame(animate);
+          }
+        }
+
+        animate();
+      }
+
+      function easeInOutQuad(currentFrame, start, end, totalFrames) {
+        currentFrame /= totalFrames / 2;
+        if (currentFrame < 1) {
+          return ((end - start) / 2) * currentFrame * currentFrame + start;
+        }
+        currentFrame--;
+        return (-(end - start) / 2) * (currentFrame * (currentFrame - 2) - 1) + start;
+      }
+    </script>
   </body>
 </html>
