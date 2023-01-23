@@ -12,13 +12,13 @@
   }
   .list-bill {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin: 1rem 0;
   }
   .list-bill a {
-    font-size: 13px;
+    font-size: 14px;
+    margin: auto;
   }
   .form-payment input{
     padding: .5rem;

@@ -26,6 +26,7 @@ nav {
     align-items: center;
     padding: 12px;
     background-color: #fff;
+    border-bottom: 1px solid #d1d1d1;
   }
   .navbar-logo a {
     display: flex;
