@@ -4,24 +4,26 @@
   .image-flashsale {
     display: none;
   }
-  .bils-section{
+  .bils-section {
     margin: 1rem 12px;
   }
-  .title-payment{
+  .title-payment {
     margin: 1rem 0;
+  }
+  .group-list-bill{
+    overflow: scroll;
   }
   .list-bill {
+    width: 120vw;
+    overflow-x: scroll;
     display: flex;
     align-items: center;
-    text-align: center;
+    column-gap: 16px;
+    padding: 8px 0;
     margin: 1rem 0;
   }
-  .list-bill a {
-    font-size: 14px;
-    margin: auto;
-  }
-  .form-payment input{
-    padding: .5rem;
+  .form-payment input {
+    padding: 0.5rem;
     background-color: #fcfcfc;
     width: 100%;
     border: 1px solid #828282;
@@ -51,10 +53,10 @@
   .image-flashsale {
     height: 322px;
   }
-  .title-payment{
+  .title-payment {
     margin: 1.5rem 0;
   }
-  .list-bill{
+  .list-bill {
     display: flex;
     align-items: center;
     gap: 1rem;
