@@ -39,7 +39,7 @@
             <div class="col-lg-8 col-sm-12 border" style="border-radius: 8px">
               <div class="group">
                 <h5 class="fw-bold title-payment">Payment Transaction</h5>
-                  <div class="list-bill"></div>
+                <div class="list-bill"></div>
                 <div class="group border-top">
                   <form class="form-payment">
                     <div class="row">
@@ -64,13 +64,14 @@
         </div>
       </div>
       <!-- Categories Section -->
-      <!-- <div class="categories-section">
+      <div class="categories-section">
         <div class="container-fluid">
           <h3 class="fw-bold m-0">Choice Categories</h3>
-          <div class="row categories"></div>
+          <div class="categories"></div>
         </div>
       </div>
-      <div class="flash-sale-section">
+      <!-- Flashsale Section -->
+      <!-- <div class="flash-sale-section">
         <div class="container-fluid">
           <div class="group title-section display-between-center">
             <h3 class="fw-bold m-0">Januari Super Flash Sale ⚡</h3>
@@ -81,16 +82,16 @@
               </p>
             </div>
           </div>
-          <div class="position-relative">
+          <!-- <div class="position-relative">
             <div id="cardSection" class="group card-section"></div>
             <div class="display-between-center btn-group">
               <button id="prev-button" class="btn-prev"><i class="fa-solid fa-chevron-left"></i> Back</button>
               <button id="next-button" class="btn-next">Next <i class="fa-solid fa-chevron-right"></i></button>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="new-features-section">
+          </div> -->
+      <!-- </div> -->
+      <!-- </div>  -->
+      <!-- <div class="new-features-section">
         <div class="container-fluid">
           <h4 class="fw-bold m-0">Now Easier to Choose <span class="text-box">New Features</span></h4>
           <div class="group py-4">
@@ -243,7 +244,7 @@
       });
     </script>
     <script src="js/payment.js"></script>
-    <!-- <script src="js/navComponent.js"></script> -->
+    <script src="js/prev-next-btn.js"></script>
     <script src="js/categories.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/stock-barang.js"></script>
@@ -260,46 +261,5 @@
         loading.style.display = "none";
       }, 3000);
     </script> -->
-    <script>
-      var prevButton = document.getElementById("prev-button");
-      var nextButton = document.getElementById("next-button");
-      var overflowContainer = document.getElementById("cardSection");
-      var scrollAmount = 635;
-      var scrollSpeed = 50;
-
-      prevButton.addEventListener("click", function () {
-        scroll(-scrollAmount);
-      });
-
-      nextButton.addEventListener("click", function () {
-        scroll(scrollAmount);
-      });
-
-      function scroll(amount) {
-        var start = overflowContainer.scrollLeft;
-        var end = start + amount;
-        var currentFrame = 0;
-        var totalFrames = scrollSpeed;
-
-        function animate() {
-          currentFrame++;
-          overflowContainer.scrollLeft = easeInOutQuad(currentFrame, start, end, totalFrames);
-          if (currentFrame < totalFrames) {
-            window.requestAnimationFrame(animate);
-          }
-        }
-
-        animate();
-      }
-
-      function easeInOutQuad(currentFrame, start, end, totalFrames) {
-        currentFrame /= totalFrames / 2;
-        if (currentFrame < 1) {
-          return ((end - start) / 2) * currentFrame * currentFrame + start;
-        }
-        currentFrame--;
-        return (-(end - start) / 2) * (currentFrame * (currentFrame - 2) - 1) + start;
-      }
-    </script>
   </body>
 </html>

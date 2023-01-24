@@ -82,15 +82,7 @@ body {
 .text-purple:hover {
   color: #52057b;
 }
-.logos {
-  width: 25px;
-  height: 25px;
-}
-.logo-category {
-  background-color: #ebebeb;
-  padding: 24px;
-  border-radius: 100%;
-}
+
 .a-link {
   text-decoration: none;
   cursor: pointer;

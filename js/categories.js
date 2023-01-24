@@ -14,16 +14,17 @@ const loadCatData = async () => {
 const loadMenuCatData = (categories) => {
   const tampilData = categories
     .map((eCat) => {
-      return `<div class="col-lg-1 col-md-2 display-center">
+      return `
       <a href="#" class="link">
-      <div class="logo-category my-2 display-center">
+      <div class="card-categories">
+      <div class="logo-category">
       <img src="images/vector-category/${eCat.logo}" alt="" class="logos"/>
       </div>
       <div class="title-category display-center text-center my-2">
       <p class="paragraph-2">${eCat.title}</p>
       </div>
-      </a>
       </div>
+      </a>
       `
     })
     .join("");
